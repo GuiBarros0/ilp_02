@@ -8,7 +8,7 @@
 </head>
 <body>
     <ul>
-        <li><a href="adivinha.html"></a>adivinha desafio</li>
+        <li><a href="adivinha.html">adivinha desafio</a></li>
         <li><a href="Atividade 01 aula 02"></a></li>
     </ul>
 </body>
