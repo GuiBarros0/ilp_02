@@ -9,7 +9,7 @@
 <body>
     <ul>
         <li><a href="adivinha.html">adivinha desafio</a></li>
-        <li><a href="Atividade 01 aula 02"></a></li>
+        <li><a href="projeto02_aula02.html">projeto 02 aula 02</a></li>
     </ul>
 </body>
 
