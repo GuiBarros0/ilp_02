@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,37 +16,45 @@
 
 <div class="container">
     <p id="po">Digite os valores do array:</p>
-	<form class="" action="index.html" method="post">
-		<input type="text" name="valoresArray" id="text" value="" /><br>
-		<button type="button" name="button" onclick="enviar()">
-			Enviar 
-		</button>
-	</form>
+	<div>
+		<label class="sr-only">Insira um nome</label>
+		<input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+		<button type="submit" class="btn btn-primary mb-2" onclick="addName()">Adicionar</button>
+	</div>
+	<div id="result"></div>
 	<br>
 
-	<p id="par"></p>
+	<div id="result"></div>
 </div>
-</body>
+
 	<script type="text/javascript">
-		var k = "";
-		function enviar() {
-			var input = document.getElementsByName('valoresArray');
+        let names = [];
+            function addName() {
+                let name = document.getElementById("nome").value.toLowerCase();
+                let isExistName = names.some((value) => { // verifica se ja tem um nome igual|| some retorna um true ou false é igual um elementbyID
+                    return value == name; // retorna se é vdd ou false se tem um nome igual
+                });
+                if (isExistName) {
+                    return false;
+                } else {
+                    names.push(name); //add a string no fim do vetor
+                    names.sort(); // ordena a sting por ordem alfabetica
+                    document.querySelector("#result").innerHTML = "";
+                    names.forEach( // faz uma "verificaçao" em cada elemento do vetor
+                        (name) =>
+                            (document.querySelector(
+                                "#result"
+                            ).innerHTML += `<p>${name}</p>`) // pega a string do vetor, e cria um elemento tag <p> com a string
+                    );
+                }
 
-			for (var i = 0; i < input.length; i++) {
-				var a = input[i];
-				k = k + a.value + " ";
-
-			}
-
-			document.getElementById("par").innerHTML = k;
-			document.getElementById("po").innerHTML = "Saidas";
-            document.getElementById('text').value ='';
+                return names;
+            document.getElementById('nome').value ='';
             window.setTimeout(function () { 
     document.getElementById('text').focus(); 
 }, 0);
-		}
-
-	</script>
-
+            }
+    </script>
+</body>
 
 </html>
