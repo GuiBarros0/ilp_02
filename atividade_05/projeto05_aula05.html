@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../atividade_05/config.css">
+</head>
+<body>
+    <h1 class="p">Características do Carro</h1>
+
+	<nav class="menu">
+		<a class="triangle" href="../index.php"></a>
+	  </nav>
+
+<div class="container">
+    <label class="p">Marca</label>
+    <br>
+    <input class="form-control" id="marca" type="text">
+    <br>
+    <label class="p">Modelo</label>
+    <br>
+    <input class="form-control" id="modelo" type="text">
+    <br>
+    <label class="p">Ano</label>
+    <br>
+    <input class="form-control" id="ano" type="text">
+    <br>
+    <label class="p">Cor</label>
+    <br>
+    <input class="form-control" id="cor" type="text">
+    <br>
+    <label class="p">Kiloquetragem</label>
+    <br>
+    <input class="form-control" id="km" type="text">
+    <br>
+    <label class="p">Valor</label>
+    <br>
+    <input class="form-control" id="valor_fipe" type="text">
+    <br>
+    <br>
+    <button id="Funfa">Clique Aqui</button>
+    <br>
+    <br>
+    <label class="p">Anos de Utilização: </label><input class="form-control" id="Anocarro" type="text">
+    <br>
+    <br>
+    <label class="p">Valor de Mercado Atual: </label><input class="form-control" id="Valorcarro" type="text">
+</div>
+
+	<script type="text/javascript">
+ 
+ document.getElementById("Funfa").addEventListener('click', function () { // add evento ao apertar o botao.
+                
+                let carro = { // criaçao objeto
+                    marca: document.getElementById("marca").value,
+                    modelo: document.getElementById("modelo").value,
+                    ano: document.getElementById("ano").value,
+                    cor: document.getElementById("cor").value,
+                    km: document.getElementById("km").value,
+                    valor: document.getElementById("valor_fipe").value,
+                
+
+                    anosUtilizacao: function() { // forma de declara funçao de objetos.
+                        let anoAtual = 2022;
+                        return anoAtual - carro.ano;
+                    },
+
+                    valorMercado: function() {
+                        if (carro.km <= 30.000)
+                            return carro.valor * 1.1;
+                        if (carro.km >= 30.000 && carro.km <= 50.000)
+                            return carro.valor * 1;
+                        else
+                            return carro.valor * 0.9;
+                    }
+                };
+                document.getElementById('Anocarro').value = String(carro.anosUtilizacao()); // declara q a tag com id, tem o valor da funçao do objeto || String = converte para string
+                document.getElementById('Valorcarro').value = String(carro.valorMercado());
+            });
+
+    </script>
+</body>
+
+</html>
