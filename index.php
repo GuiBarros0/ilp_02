@@ -28,11 +28,11 @@
           </li>
           
           <li class="spread">
-                <a class="unit" href="#">null</a>
+                <a class="unit" href="atividade_05/projeto05_aula05.html">5</a>
           </li>
           
           <li class="spread">
-                <a class="unit" href="#">null</a>
+                <a class="unit" href="atividade_06/projeto06_aula06.html">6</a>
           </li>
           
           <li class="spread">
@@ -55,6 +55,8 @@
         <h6>#2 - Relogio Digital</h6>
         <h6>#3 - Palíndromo</h6>
         <h6>#4 - Arrays</h6>
+        <h6>#5 - Carro</h6>
+        <h7>#6 - Letreiro</h6>
     </ul>
 
 </body>
