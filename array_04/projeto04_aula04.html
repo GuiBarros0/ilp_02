@@ -16,42 +16,40 @@
     </nav>
 
     <div class="container">
-        <p id="po">Digite os valores do array:</p>
+        <p>Digite os valores do array:</p>
         <div>
-            <input type="text"  id="valor" name="valor" placeholder="Insira os valores do array">
+            <input type="text" id="valor" name="valor" placeholder="Insira os valores do array">
             <button type="submit" id="btnAdicionar" onclick="addName()">Adicionar</button>
         </div>
     </div>
+        <script class="form" type="text/javascript">
+            let elementos = [];
+            let btnAdicionar = document.getElementById("btnAdicionar");
 
-    <script type="text/javascript">
-let elementos = [];
-let btnAdicionar = document.getElementById("btnAdicionar");
+            btnAdicionar.addEventListener("click", function () {
 
-btnAdicionar.addEventListener("click", function () {
+                let valor = document.getElementById("valor").value;
+                elementos.push(valor.toString());
 
-    let valor = document.getElementById("valor").value;
-    elementos.push(valor.toString());
+                let oldOL = document.getElementById("lista");
+                if (oldOL !== null) { document.body.removeChild(oldOL); }
 
-    let oldOL = document.getElementById("lista");
-    if (oldOL !== null)
-   { document.body.removeChild(oldOL); }
+                elementos.sort();
 
-    elementos.sort();
+                let elementoOL = document.createElement("OL");
+                elementoOL.setAttribute("id", "lista");
+                elementos.forEach(element => {
+                    let elementLI = document.createElement("LI");
+                    let elementBR = document.createElement("BR");
+                    let textNode = document.createTextNode(element);
+                    elementLI.appendChild(textNode);
+                    elementoOL.appendChild(textNode);
+                    elementoOL.appendChild(elementBR);
+                });
 
-    let elementoOL = document.createElement("OL");
-    elementoOL.setAttribute("id", "lista");
-    elementos.forEach(element => {
-        let elementLI = document.createElement("LI");
-        let elementBR = document.createElement("BR");
-        let textNode = document.createTextNode(element);
-        elementLI.appendChild(textNode);
-        elementoOL.appendChild(textNode);
-        elementoOL.appendChild(elementBR);
-    });
-
-    document.body.appendChild(elementoOL);
-});
-    </script>
+                document.body.appendChild(elementoOL);
+            });
+        </script>
 </body>
 
 </html>
