@@ -34,7 +34,7 @@
                 <div class="card-item">
                     <a href="../lab_eng/relogio_02/relogio.html" target="_blank"><img class="projeto-img" src="../lab_eng/relogio_02/img/relogio.png" alt="desafio Boas vidas"></a>
                     <div class="card-info">
-                        <a class="codigo-github" id="codigo-github" href="https://github.com/jhonatasv/javascript/tree/master/desafios/d002" rel="author" target="_blank">
+                        <a class="codigo-github" id="codigo-github" href="https://github.com/GuiBarros0/ilp_02/blob/main/adivinha_01/adivinha.html" rel="author" target="_blank">
                             <p>Relogio digital</p>
                         </a>
                     </div>
