@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="config.css">
+    <title>REACT</title>
+</head>
+
+<body>
+    <nav class="menu">
+		<a class="triangle" href="../index.php"></a>
+	  </nav>
+<div class="container">
+    <h1 class="gradient-text">Venha estudar na FATEC!</h1>
+</div>
+        <script type="text/javascript">
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+  }
+  const titulo = document.querySelector('h1');
+  typeWriter(titulo);
+        </script>
+    </div>
+</body>
+
+</html>

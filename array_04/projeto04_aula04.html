@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a class="triangle" href="../index.php"></a>
+    </nav>
+
+    <div class="container">
+        <p id="po">Digite os valores do array:</p>
+        <div>
+            <input type="text"  id="valor" name="valor" placeholder="Insira os valores do array">
+            <button type="submit" id="btnAdicionar" onclick="addName()">Adicionar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+let elementos = [];
+let btnAdicionar = document.getElementById("btnAdicionar");
+
+btnAdicionar.addEventListener("click", function () {
+
+    let valor = document.getElementById("valor").value;
+    elementos.push(valor.toString());
+
+    let oldOL = document.getElementById("lista");
+    if (oldOL !== null)
+   { document.body.removeChild(oldOL); }
+
+    elementos.sort();
+
+    let elementoOL = document.createElement("OL");
+    elementoOL.setAttribute("id", "lista");
+    elementos.forEach(element => {
+        let elementLI = document.createElement("LI");
+        let elementBR = document.createElement("BR");
+        let textNode = document.createTextNode(element);
+        elementLI.appendChild(textNode);
+        elementoOL.appendChild(textNode);
+        elementoOL.appendChild(elementBR);
+    });
+
+    document.body.appendChild(elementoOL);
+});
+    </script>
+</body>
+
+</html>
