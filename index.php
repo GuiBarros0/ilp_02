@@ -24,7 +24,7 @@
                 <h1>Desafios</h1>
             </div>
                 <div class="card-item">
-                    <a href="adivinha_01/adivinha.html" target="_blank"><img class="projeto-img" src="../lab_eng/adivinha_01/img/adivinha.png" alt="desafio Mensagem"></a>
+                    <a href="adivinha_01/adivinha.html" target="_blank"><img class="projeto-img" src="adivinha_01/img/adivinha.png" alt="desafio Mensagem"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="adivinha_01/adivinha.html" rel="author" target="_blank">
                             <p>Adivinha</p>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="card-item">
-                    <a href="../lab_eng/relogio_02/relogio.html" target="_blank"><img class="projeto-img" src="../lab_eng/relogio_02/img/relogio.png" alt="desafio Boas vidas"></a>
+                    <a href="relogio_02/relogio.html" target="_blank"><img class="projeto-img" src="relogio_02/img/relogio.png" alt="desafio Boas vidas"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="https://github.com/GuiBarros0/ilp_02/blob/main/adivinha_01/adivinha.html" rel="author" target="_blank">
                             <p>Relogio digital</p>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="card-item">
-                    <a href="../lab_eng/array_04/projeto04_aula04.html" target="_blank"><img class="projeto-img" src="../lab_eng/array_04/img/array.png" alt="Calculando o troco"></a>
+                    <a href="array_04/projeto04_aula04.html" target="_blank"><img class="projeto-img" src="array_04/img/array.png" alt="Calculando o troco"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="https://github.com/jhonatasv/javascript/tree/master/desafios/d004" rel="author" target="_blank">
                             <p>Array</p>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="card-item">
-                    <a href="../lab_eng/letreiro_05/atividade05_aula05.html" target="_blank"><img class="projeto-img" src="../lab_eng/letreiro_05/img/letreiro.png" alt="Conversor de Medidas"></a>
+                    <a href="letreiro_05/atividade05_aula05.html" target="_blank"><img class="projeto-img" src="letreiro_05/img/letreiro.png" alt="Conversor de Medidas"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="https://github.com/jhonatasv/javascript/tree/master/desafios/d005" rel="author" target="_blank">
                             <p>Letreiro</p>
