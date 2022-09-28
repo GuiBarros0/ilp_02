@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="card-item">
-                    <a href="../lab_eng/palindromo_03/img/palindromo.png" target="_blank"><img class="projeto-img" src="../lab_eng/palindromo_03/img/palindromo.png" alt="desafio antes e depois"></a>
+                    <a href="palindromo_03/img/palindromo.png" target="_blank"><img class="projeto-img" src="palindromo_03/img/palindromo.png" alt="desafio antes e depois"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="https://github.com/jhonatasv/javascript/tree/master/desafios/d003" rel="author" target="_blank">
                             <p>Palindrómo</p>
