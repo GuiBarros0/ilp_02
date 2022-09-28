@@ -24,7 +24,7 @@
                 <h1>Desafios</h1>
             </div>
                 <div class="card-item">
-                    <a href="ilp02/adivinha_01/adivinha.html" target="_blank"><img class="projeto-img" src="../lab_eng/adivinha_01/img/adivinha.png" alt="desafio Mensagem"></a>
+                    <a href="adivinha_01/adivinha.html" target="_blank"><img class="projeto-img" src="../lab_eng/adivinha_01/img/adivinha.png" alt="desafio Mensagem"></a>
                     <div class="card-info">
                         <a class="codigo-github" id="codigo-github" href="adivinha_01/adivinha.html" rel="author" target="_blank">
                             <p>Adivinha</p>
