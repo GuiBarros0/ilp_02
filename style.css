@@ -26,6 +26,7 @@
 .dark-mode:root {
     ---background-body: #22272E;
     ---background-card-info: #2b323bb4;
+    color: #fff;
     ---color-title: #fff;
     ---color-links-github: #fff;
     ---color-links-github-hove: #1be691;
